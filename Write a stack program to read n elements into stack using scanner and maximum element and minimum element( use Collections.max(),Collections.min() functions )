@@ -1,0 +1,18 @@
+import java.util.*;
+class Solution{
+public static void main(String args[])
+{ 
+  Scanner sc=new Scanner(System.in);
+  Stack<Integer> st=new Stack<Integer>();
+  System.out.println("Enter the number of elements");
+  int n= sc.nextInt();
+  System.out.println("Enter the elements");
+  for(int i=0;i<n;i++)
+  st.push(sc.nextInt());
+  int max,min;
+  max=Collections.max(st);
+  min=Collections.min(st);
+  System.out.println("Maximum value: "+max);
+  System.out.println("Minimum value: "+min);
+}
+}
